@@ -1,0 +1,112 @@
+
+package Pool;
+
+public class Pool01UnitName {
+    private String[] unitName = new String[100];
+
+    Pool01UnitName() {
+        unitName[0] = "Salara";
+        unitName[1] = "Chavezlafia";
+        unitName[2] = "Phillipsmog";
+        unitName[3] = "Pela";
+        unitName[4] = "Gonzatt";
+        unitName[5] = "Ellisiri";
+        unitName[6] = "Owenorty";
+        unitName[7] = "Stephenmony ";
+        unitName[8] = "Kendmitchell";
+        unitName[9] = "Griheart";
+        unitName[10] = "Clarpuff";
+        unitName[11] = "Kokakhan";
+        unitName[12] = "Goliprice";
+        unitName[13] = "Kendmirez";
+        unitName[14] = "Willpatel ";
+        unitName[15] = "Hunda";
+        unitName[16] = "Neonren";
+        unitName[17] = "Harmperez";
+        unitName[18] = "Cullroberts";
+        unitName[19] = "Forestce";
+        unitName[20] = "Maxia";
+        unitName[21] = "Wilkinory";
+        unitName[22] = "Gothcruz";
+        unitName[23] = "Roclop";
+        unitName[24] = "Rolight";
+        unitName[25] = "Ifharris";
+        unitName[26] = "Bagan";
+        unitName[27] = "Bathriscoll";
+        unitName[28] = "Bailefang";
+        unitName[29] = "Firebrooks";
+        unitName[31] = "Howarensteinia";
+        unitName[32] = "Drizznez";
+        unitName[33] = "Thudsimpson";
+        unitName[34] = "Jameshark";
+        unitName[35] = "Dunnatoria";
+        unitName[36] = "Stett";
+        unitName[37] = "Malwis";
+        unitName[38] = "Gacal";
+        unitName[39] = "Dumbleross";
+        unitName[40] = "Collinzoga";
+        unitName[41] = "Garallopa";
+        unitName[42] = "Jaflame";
+        unitName[43] = "Zimhussain";
+        unitName[44] = "Pateth";
+        unitName[45] = "Legoge";
+        unitName[46] = "Brookself";
+        unitName[47] = "Slimeningham";
+        unitName[48] = "Undeadscott";
+        unitName[49] = "Caprillips";
+        unitName[50] = "Jameshugia";
+        unitName[51] = "Azper";
+        unitName[52] = "Goriona";
+        unitName[53] = "Reanimharrison";
+        unitName[54] = "Holmessmoke";
+        unitName[55] = "Fornson";
+        unitName[56] = "Washingalka";
+        unitName[57] = "Jenkinscheek";
+        unitName[58] = "Rainreeman";
+        unitName[59] = "Kosyant";
+        unitName[60] = "Tinkerter";
+        unitName[61] = "Robertsett";
+        unitName[62] = "Bartenna";
+        unitName[63] = "Crocorke";
+        unitName[64] = "Fangwells";
+        unitName[65] = "Thomasshark";
+        unitName[66] = "Ogoter";
+        unitName[67] = "Silverwi";
+        unitName[68] = "Whiteblex";
+        unitName[69] = "Shizmeyer";
+        unitName[70] = "Drogstin";
+        unitName[71] = "Gigantmyers";
+        unitName[72] = "Mendodigo";
+        unitName[73] = "Neybutler";
+        unitName[74] = "Hunett";
+        unitName[75] = "Ketwinkle";
+        unitName[76] = "Schmidtwave";
+        unitName[77] = "Rodriguezazora";
+        unitName[78] = "Peswoon";
+        unitName[79] = "Fisherstompa";
+        unitName[80] = "Cagdy";
+        unitName[81] = "Barkerinabla";
+        unitName[82] = "Titangner";
+        unitName[83] = "Wafang";
+        unitName[84] = "Arlok";
+        unitName[85] = "Glitterlewi";
+        unitName[86] = "Deadrris";
+        unitName[87] = "Shtchell";
+        unitName[88] = "Martinin";
+        unitName[89] = "Twinklecia";
+        unitName[90] = "Skymarshall";
+        unitName[91] = "Haphelia";
+        unitName[92] = "Carterolga";
+        unitName[93] = "Wickeddez";
+        unitName[94] = "Rusalgordon";
+        unitName[95] = "Huslight";
+        unitName[96] = "Castroka";
+        unitName[97] = "Robinson";
+        unitName[98] = "Chamber";
+        unitName[99] = "Autoter";
+    }
+    
+    public String getUnitName(int id){
+        return this.unitName[id];
+    }
+}

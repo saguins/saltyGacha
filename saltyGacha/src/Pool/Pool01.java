@@ -1,21 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Pool;
 
-/**
- *
- * @author lara_
- */
 public class Pool01 {
 
+    private Pool01UnitName unitName;
     private int maxNum = 99; //amount of charactors in this pool
     private int[] arrayId = new int[maxNum + 1]; //array of charactors
     private int[] arrayRate = new int[100]; //array of rarity probability
 
     public Pool01() {
+        this.unitName = new Pool01UnitName();
         for (int i = 1; i < arrayId.length; i++) { //create id
             arrayId[i] = i;
         }
@@ -38,6 +32,10 @@ public class Pool01 {
         } else { //67-99
             return "R";
         }
+    }
+    
+    public String getName(int id) {
+        return this.unitName.getUnitName(id);
     }
 
     public int pickOne() {
@@ -81,16 +79,16 @@ public class Pool01 {
     public String toString() {
         int[] result = pickTen();
         return "Result:\n"
-                + "[" + getTeir(result[0]) + "] " + result[0] + "\n"
-                + "[" + getTeir(result[1]) + "] " + result[1] + "\n"
-                + "[" + getTeir(result[2]) + "] " + result[2] + "\n"
-                + "[" + getTeir(result[3]) + "] " + result[3] + "\n"
-                + "[" + getTeir(result[4]) + "] " + result[4] + "\n"
-                + "[" + getTeir(result[5]) + "] " + result[5] + "\n"
-                + "[" + getTeir(result[6]) + "] " + result[6] + "\n"
-                + "[" + getTeir(result[7]) + "] " + result[7] + "\n"
-                + "[" + getTeir(result[8]) + "] " + result[8] + "\n"
-                + "[" + getTeir(result[9]) + "] " + result[9];
+                + "[" + getTeir(result[0]) + "] " + getName(result[0]) + "\n"
+                + "[" + getTeir(result[1]) + "] " + getName(result[1]) + "\n"
+                + "[" + getTeir(result[2]) + "] " + getName(result[2]) + "\n"
+                + "[" + getTeir(result[3]) + "] " + getName(result[3]) + "\n"
+                + "[" + getTeir(result[4]) + "] " + getName(result[4]) + "\n"
+                + "[" + getTeir(result[5]) + "] " + getName(result[5]) + "\n"
+                + "[" + getTeir(result[6]) + "] " + getName(result[6]) + "\n"
+                + "[" + getTeir(result[7]) + "] " + getName(result[7]) + "\n"
+                + "[" + getTeir(result[8]) + "] " + getName(result[8]) + "\n"
+                + "[" + getTeir(result[9]) + "] " + getName(result[9]);
     }
 
 }

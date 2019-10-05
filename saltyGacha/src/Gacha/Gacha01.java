@@ -1,27 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Gacha;
 
 import Pool.Pool01;
 import java.util.Arrays;
+import java.util.Scanner;
 
-/**
- *
- * @author lara_
- */
 public class Gacha01 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         Pool01 gacha = new Pool01();
-        System.out.println("Gacha Simulator by SAGUINS");
-        System.out.println("-----------------------------");
+        System.out.println("Gacha Simulator");
+        System.out.println("-----------------------");
         System.out.println(gacha.toString());
+        System.out.println("-----------------------");
+        System.out.println("Try again? (enter anything to continue / n to quit)");
+        String key = input.nextLine();
+        while (!key.equals("n")) {
+            gacha = new Pool01();
+            System.out.println("-----------------------");
+            System.out.println(gacha.toString());
+            System.out.println("-----------------------");
+            System.out.println("Try again? (enter anything to continue / n to quit)");
+            key = input.nextLine();
+        }
+        System.out.println("-----------------------");
+        System.out.println("Goodbye!");
     }
-    
+
 }
