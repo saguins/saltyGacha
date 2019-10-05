@@ -4,7 +4,7 @@ package pool;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PoolUnitName {
+class PoolUnitName {
     private List<String> unitNames = new ArrayList<>();
 
     PoolUnitName() {
@@ -109,7 +109,7 @@ public class PoolUnitName {
         unitNames.add("Autoter");
     }
 
-    public List<String> getUnitNames() {
+    List<String> getUnitNames() {
         return unitNames;
     }
 }

@@ -15,20 +15,20 @@ public class PoolResult {
     private Integer rare;
     private Integer superRare;
     private Integer extremelyRare;
-    private List<PoolModel> loot;
+    private List<PoolModel> characters;
 
 
-    public PoolResult(List<PoolModel> loot) {
-        this.loot = loot;
-        this.total = loot.size();
-        this.rare = filterByTier(loot, TierList.R);
-        this.superRare = filterByTier(loot, TierList.SR);
-        this.extremelyRare = filterByTier(loot, TierList.SSR);
+    public PoolResult(List<PoolModel> characters) {
+        this.characters = characters;
+        this.total = characters.size();
+        this.rare = filterByTier(characters, TierList.R);
+        this.superRare = filterByTier(characters, TierList.SR);
+        this.extremelyRare = filterByTier(characters, TierList.SSR);
     }
 
 
-    private Integer filterByTier(List<PoolModel> loot, TierList tierList) {
-        return (int) loot.stream().filter(f -> f.getTier().equals(tierList.getTier())).count();
+    private Integer filterByTier(List<PoolModel> characters, TierList tierList) {
+        return (int) characters.stream().filter(f -> f.getTier().equals(tierList.getTier())).count();
     }
 
     private double getPercentage(int partOf, int total) {
@@ -52,10 +52,10 @@ public class PoolResult {
         System.out.println("Extremely Rare: " + getPercentage(extremelyRare, total) + "%");
     }
 
-    public void getResultListOfItems() {
+    public void getResultListOfCharacters() {
         Set<String> results = new HashSet<>();
-        for (PoolModel item : loot) {
-            int quantity = (int) loot.stream().filter(f -> f.equals(item)).count();
+        for (PoolModel item : characters) {
+            int quantity = (int) characters.stream().filter(f -> f.equals(item)).count();
             String result = quantity + "x " + item.getParsedTier() + item.getName();
             results.add(result);
         }

@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Gacha {
 
-    static List<PoolModel> myLoot = new ArrayList<>();
+    private static List<PoolModel> characters = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
     private static String key = "";
 
@@ -28,11 +28,11 @@ public class Gacha {
     private static void huntMenu(){
         while (!key.equals("n")) {
             Pool gacha = new Pool();
-            List<PoolModel> hunt = gacha.pickTen();
-            myLoot.addAll(hunt);
+            List<PoolModel> characterList = gacha.pickTen();
+            characters.addAll(characterList);
             System.out.println("-----------------------");
             System.out.println("Result:");
-            for (PoolModel prize : hunt) {
+            for (PoolModel prize : characterList) {
                 System.out.println(prize.getParsedTier() + " " + prize.getName());
             }
             System.out.println("-----------------------");
@@ -42,7 +42,7 @@ public class Gacha {
     }
 
     private static void resultMenu(){
-        PoolResult result = new PoolResult(myLoot);
+        PoolResult result = new PoolResult(characters);
         result.getTotal();
         while (!"f".equals(key)) {
             System.out.println("-----------------------");
@@ -56,7 +56,7 @@ public class Gacha {
                     emptyKey();
                     break;
                 case "3":
-                    result.getResultListOfItems();
+                    result.getResultListOfCharacters();
                     emptyKey();
                     break;
                 case "f":
@@ -64,9 +64,9 @@ public class Gacha {
                     return;
                 default:
                     System.out.println("Press key: ");
-                    System.out.println("1 - Percentage of rarity item founded.");
-                    System.out.println("2 - Quantity of items by rarity.");
-                    System.out.println("3 - Quantity, Name and Rarity of all founded items.");
+                    System.out.println("1 - Percentage of rarity characters founded.");
+                    System.out.println("2 - Quantity of characters by rarity.");
+                    System.out.println("3 - Quantity, Name and Rarity of all founded characters.");
                     System.out.println("f - Finishes");
                     key = scanner.nextLine();
                     break;

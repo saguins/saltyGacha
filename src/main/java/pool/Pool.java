@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Pool {
 
-    List<String> names = new PoolUnitName().getUnitNames();
-    List<PoolModel> models = new ArrayList<>();
+    private List<String> names = new PoolUnitName().getUnitNames();
+    private List<PoolModel> models = new ArrayList<>();
 
     public Pool() {
         for (String name : names) {
@@ -24,12 +24,12 @@ public class Pool {
         }
     }
 
-    public PoolModel pickOne() {
+    private PoolModel pickOne() {
         int rnd = (int) (Math.random() * names.size());
         return models.get(rnd);
     }
 
-    public PoolModel pickOneGuarantee() {
+    private PoolModel pickOneGuarantee() {
         int rare = TierList.SR.getPercentageNumberRecursively(names.size());
         int rnd = (int) (Math.random() * rare);
         return models.get(rnd);
