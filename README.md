@@ -23,4 +23,4 @@ Since between October 1 and October 31 is **Hacktoberfest**, I want to improve t
 - [ ] **Gacha Simulator GUI!**
 - [ ] Others statistic results.
 
-**Contributor during Hacktoberfest:** pshkrh
+**Contributors during Hacktoberfest:** pshkrh, EikeSan.
