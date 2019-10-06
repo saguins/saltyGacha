@@ -17,7 +17,7 @@ public class Gacha {
     private static Integer counter = 0;
 
     public static void main(String[] args) {
-        System.out.println("main.java.Pool.Gacha Simulator");
+        System.out.println("Gacha Simulator");
         huntMenu();
         resultMenu();
 

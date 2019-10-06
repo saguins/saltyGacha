@@ -1,7 +1,7 @@
 # Welcome to 'saltyGacha' Project by SAGUINS
 Write in **Java** programming language. Using if-else, for-loop, switch-case and a little bit about Class. This project can build something more on it, like how often did I get SSR? how often did I get this units?
 
-This project is a prototype of [Overhit main.java.pool.Gacha Simulator by GameFever](https://overhit.gamefever.co/gacha/)
+This project is a prototype of [Overhit Gacha Simulator by GameFever](https://overhit.gamefever.co/gacha/)
 
 ## Let's talk about this case.
 - 99 units.
@@ -15,10 +15,10 @@ Enjoy!
 
 ## 🎃 Hacktoberfest TO-DO list! 🎃
 Since between October 1 and October 31 is **Hacktoberfest**, I want to improve this project and I want to see how far this project can go. This is my first Hacktoberfest so feel free to send any pull request. Any beginner is welcome too!
-- [x] **main.java.pool.Gacha Unit Name List.** More recognisable than numbers. (Thank you to [Name Generator](https://www.name-generator.org.uk/fantasy/))
+- [x] **Gacha Unit Name List.** More recognisable than numbers. (Thank you to [Name Generator](https://www.name-generator.org.uk/fantasy/))
 - [ ] **Improve display.** like, 5 units per row, display [NEW] text when you get a new unit, etc.
-- [x] **main.java.pool.Gacha Result.** when you quit a main.java.pool.Gacha Simulator, you can see how much SSR, SR and R units that you get. (Result in numbers and percentages are acceptable.)
-- [x] **main.java.pool.Gacha Counter.** how much time did you try again?
-- [ ] **Exchange System.** It's like, 200 coins per one. You need to enter a number of you coin before you use a main.java.pool.Gacha Simulator. If you out of your coin, you can't try again anymore.
-- [ ] **main.java.pool.Gacha Simulator GUI!**
+- [x] **Gacha Result.** when you quit a Gacha Simulator, you can see how much SSR, SR and R units that you get. (Result in numbers and percentages are acceptable.)
+- [x] **Gacha Counter.** how much time did you try again?
+- [ ] **Exchange System.** It's like, 200 coins per one. You need to enter a number of you coin before you use a Gacha Simulator. If you out of your coin, you can't try again anymore.
+- [ ] **Gacha Simulator GUI!**
 - [ ] Others statistic results.
