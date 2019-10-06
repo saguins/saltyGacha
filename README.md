@@ -18,7 +18,9 @@ Since between October 1 and October 31 is **Hacktoberfest**, I want to improve t
 - [x] **Gacha Unit Name List.** More recognisable than numbers. (Thank you to [Name Generator](https://www.name-generator.org.uk/fantasy/))
 - [ ] **Improve display.** like, 5 units per row, display [NEW] text when you get a new unit, etc.
 - [ ] **Gacha Result.** when you quit a Gacha Simulator, you can see how much SSR, SR and R units that you get. (Result in numbers and percentages are acceptable.)
-- [ ] **Gacha Counter.** how much time did you try again?
+- [x] **Gacha Counter.** how much time did you try again? (Thanks to **pshkrh**)
 - [ ] **Exchange System.** It's like, 200 coins per one. You need to enter a number of you coin before you use a Gacha Simulator. If you out of your coin, you can't try again anymore.
 - [ ] **Gacha Simulator GUI!**
 - [ ] Others statistic results.
+
+**Contributor during Hacktoberfest:** pshkrh
