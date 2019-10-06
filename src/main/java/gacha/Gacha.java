@@ -14,6 +14,7 @@ public class Gacha {
     private static List<PoolModel> characters = new ArrayList<>();
     private static Scanner scanner = new Scanner(System.in);
     private static String key = "";
+    private static Integer counter = 0;
 
     public static void main(String[] args) {
         System.out.println("main.java.Pool.Gacha Simulator");
@@ -36,8 +37,10 @@ public class Gacha {
                 System.out.println(prize.getParsedTier() + " " + prize.getName());
             }
             System.out.println("-----------------------");
+            counterResult();
             System.out.println("Try again? (enter anything to continue / n to quit)");
             key = scanner.nextLine();
+            increaseCounter();
         }
     }
 
@@ -71,6 +74,23 @@ public class Gacha {
                     key = scanner.nextLine();
                     break;
             }
+        }
+    }
+
+    private static void increaseCounter(){
+        if (!"n".equals(key)){
+            counter++;
+        }
+    }
+
+    private static void counterResult(){
+        if(counter == 1){
+            System.out.println("You have retried " + counter + " time.");
+            System.out.println("-----------------------");
+        }
+        else if (counter > 1){
+            System.out.println("You have retried " + counter + " times.");
+            System.out.println("-----------------------");
         }
     }
 

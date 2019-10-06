@@ -18,7 +18,7 @@ Since between October 1 and October 31 is **Hacktoberfest**, I want to improve t
 - [x] **main.java.pool.Gacha Unit Name List.** More recognisable than numbers. (Thank you to [Name Generator](https://www.name-generator.org.uk/fantasy/))
 - [ ] **Improve display.** like, 5 units per row, display [NEW] text when you get a new unit, etc.
 - [x] **main.java.pool.Gacha Result.** when you quit a main.java.pool.Gacha Simulator, you can see how much SSR, SR and R units that you get. (Result in numbers and percentages are acceptable.)
-- [ ] **main.java.pool.Gacha Counter.** how much time did you try again?
+- [x] **main.java.pool.Gacha Counter.** how much time did you try again?
 - [ ] **Exchange System.** It's like, 200 coins per one. You need to enter a number of you coin before you use a main.java.pool.Gacha Simulator. If you out of your coin, you can't try again anymore.
 - [ ] **main.java.pool.Gacha Simulator GUI!**
 - [ ] Others statistic results.
