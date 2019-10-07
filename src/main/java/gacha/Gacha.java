@@ -16,8 +16,7 @@ public class Gacha {
     private static Integer counter = 0;
 
     public static void main(String[] args) {
-    	JFrame window = new JFrame("Gacha Simulator");
-    	window.add(new GUIWindow());
+    	GUIWindow window = new GUIWindow();
     	window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	window.setResizable(false);
 		window.pack();
