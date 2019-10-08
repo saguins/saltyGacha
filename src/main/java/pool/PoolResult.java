@@ -40,26 +40,28 @@ public class PoolResult {
         System.out.println("Your total of items are: " + total);
     }
 
-    public void getResultInQuantity() {
-        System.out.println("Rare: " + rare);
-        System.out.println("Super Rare: " + superRare);
-        System.out.println("Extremely Rare: " + extremelyRare);
+    public String getResultInQuantity() {
+    	return String.format("%s%n%s%n%s%n",
+				"Rare: " + rare,
+				"Super Rare: " + superRare,
+				"Extremely Rare: " + extremelyRare);
     }
 
-    public void getResultInPercentage() {
-        System.out.println("Rare: " + getPercentage(rare, total) + "%");
-        System.out.println("Super Rare: " + getPercentage(superRare, total) + "%");
-        System.out.println("Extremely Rare: " + getPercentage(extremelyRare, total) + "%");
+    public String getResultInPercentage() {
+    	return String.format("%s%n%s%n%s%n",
+				"Rare: " + getPercentage(rare, total) + "%",
+				"Super Rare: " + getPercentage(superRare, total) + "%",
+				"Extremely Rare: " + getPercentage(extremelyRare, total) + "%");
     }
 
-    public void getResultListOfCharacters() {
+    public Set<String> getResultListOfCharacters() {
         Set<String> results = new HashSet<>();
         for (PoolModel item : characters) {
             int quantity = (int) characters.stream().filter(f -> f.equals(item)).count();
             String result = quantity + "x " + item.getParsedTier() + item.getName();
             results.add(result);
         }
-        results.forEach(System.out::println);
+        return results;
     }
 }
 
