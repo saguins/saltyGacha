@@ -16,11 +16,11 @@ Enjoy!
 ## 🎃 Hacktoberfest TO-DO list! 🎃
 Since between October 1 and October 31 is **Hacktoberfest**, I want to improve this project and I want to see how far this project can go. This is my first Hacktoberfest so feel free to send any pull request. Any beginner is welcome too!
 - [x] **Gacha Unit Name List.** More recognisable than numbers. (Thank you to [Name Generator](https://www.name-generator.org.uk/fantasy/))
-- [ ] **Improve display.** like, 5 units per row, display [NEW] text when you get a new unit, etc.
+- [ ] **Improve display.** ~~like, 5 units per row, display [NEW] text when you get a new unit, etc.~~ Although this project is become GUI, all decoration things are acceptable. (fonts, color, sorting result, etc.)
 - [x] **Gacha Result.** when you quit a Gacha Simulator, you can see how much SSR, SR and R units that you get. (Result in numbers and percentages are acceptable.) (Thanks to **EikeSan**)
 - [x] **Gacha Counter.** how much time did you try again? (Thanks to **pshkrh**)
 - [ ] **Exchange System.** It's like, 200 coins per one. You need to enter a number of you coin before you use a Gacha Simulator. If you out of your coin, you can't try again anymore.
-- [ ] **Gacha Simulator GUI!**
+- [x] **Gacha Simulator GUI!** (Thanks to **ImmutableBox**)
 - [ ] Others statistic results.
 
-**Contributors during Hacktoberfest:** pshkrh, EikeSan.
+**Contributors during Hacktoberfest:** pshkrh, EikeSan, ImmutableBox.
